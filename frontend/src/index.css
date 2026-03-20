@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a; /* Dark slate background */
+  color: #e2e8f0; /* Soft white text */
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #1e293b; /* Slightly lighter slate for container */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #334155; /* Subtle dark border */
+}
+
+h1 {
+  text-align: center;
+  color: #f8fafc; /* Pure bright text for headings */
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  color: #cbd5e1;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #0f172a; /* Deep dark input background */
+  transition: all 0.2s ease;
+}
+
+textarea::placeholder {
+  color: #64748b;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Modern Blue focus */
+  background-color: #020617; /* Even darker on focus */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3b82f6; /* Lighter blue hover for dark mode */
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: #475569;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.result-panel {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: #172554; /* Deep midnight blue for success panel */
+  border: 1px solid #1e3a8a;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+}
+
+.result-item {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.result-item strong {
+  display: inline-block;
+  min-width: 140px;
+  color: #94a3b8; /* Dimmer labels */
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: #334155;
+  color: white;
+}
+
+.badge.p0 { background: #dc2626; color: #fef2f2; } /* Vibrant Dark Red */
+.badge.p1 { background: #ea580c; color: #fff7ed; } /* Vibrant Orange */
+.badge.p2 { background: #ca8a04; color: #fefce8; } /* Yellow-Gold */
+.badge.p3 { background: #16a34a; color: #f0fdf4; } /* Green */
+
+.signals-box {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #1e3a8a;
+}
+
+.signals-box ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+  color: #bfdbfe; /* Soft light blue font for signals */
+  font-size: 0.9rem;
+}
+
+.signals-box li {
+  margin-bottom: 0.25rem;
+}
+
+.history-section {
+  margin-top: 3.5rem;
+  border-top: 1px solid #334155;
+  padding-top: 2rem;
+}
+
+.ticket-card {
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: #0f172a; /* Pushed into the background */
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ticket-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  border-color: #475569;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1e293b;
+}
+
+.ticket-message {
+  font-style: italic;
+  color: #94a3b8; /* Dimmed message text */
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.ticket-meta small {
+  display: block;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.signals-meta {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #334155;
+}
