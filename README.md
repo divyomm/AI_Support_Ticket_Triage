@@ -1,7 +1,4 @@
 # AI-Powered Support Ticket Triage
-
-**[🎥 Watch the Full Video Walkthrough Here!](https://drive.google.com/file/d/1LoEWKqNacNJKfx4Ine2QF94th9X1T2h6/view?usp=sharing)**
-
 This is a full-stack web application built to analyze incoming support tickets using local keyword logic without relying on external AI APIs. It categorizes tickets, assigns priority and urgency, stores them in a database, and displays the results on a simple UI.
 
 ## How to Run the Project (Locally)
